@@ -4,6 +4,7 @@ import Hello from './components/Hello/Hello';
 import Food from './components/Food/Food';
 import NewCompApp from './components/NewComp/NewCompApp';
 import NewCompReduxApp from './components/NewCompRedux/NewCompReduxApp';
+import NewCompReduxApp1 from './components/NewCompRedux1/NewCompReduxApp1';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Food />
         <NewCompApp />
         <NewCompReduxApp />
+        <NewCompReduxApp1 />
       </header>
     </div>
   );

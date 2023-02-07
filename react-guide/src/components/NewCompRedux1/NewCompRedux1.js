@@ -1,7 +1,7 @@
 import React, { Component} from "react";
 import { connect } from "react-redux";
 
-class NewComp extends Component {
+class NewCompRedux1 extends Component {
 
     styles = {
         fontStyle: "italic",
@@ -11,25 +11,25 @@ class NewComp extends Component {
     render() {
         return(
             <div className="App">
-                <h3 style={this.styles}> {this.props.message} </h3>
-                <button onClick={this.props.Buttonchange}>Subscribe</button>
+                <h3 style={this.styles}> {this.props.message1} </h3>
+                <button onClick={this.props.Buttonchange1}>Subscribe to Redux with connect</button>
             </div>
         );
     }
 }
 const mapStateToProps = state => {
     return {
-        message: state.message
+        message1: state.reducer.message1
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
-        Buttonchange: () => dispatch({type: "Message_change"})
+        Buttonchange1: () => dispatch({type: "Message_change"})
     };
 };
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(NewComp);
+)(NewCompRedux1);

@@ -3,7 +3,7 @@ import { buttonchange } from '../../Store/NewCompAppSlice';
 import { useSelector, useDispatch } from 'react-redux';
 
 export default function NewCompRedux() {
-    const message = useSelector((state) => state.message);
+    const message = useSelector((state) => state.newCompAppReduce.message);
     const dispatch = useDispatch();
 
     const styles = {
