@@ -23,6 +23,7 @@ function App() {
           Learn React
         </a>
         <Hello name="Mita"/>
+        <Hello />
         <Food />
         <NewCompApp />
         <NewCompReduxApp />
